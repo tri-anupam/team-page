@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+  font-weight: 900;
+  background: linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 23px;
+  margin: 20px;
+  font-weight: 600;
+  background: linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+
+.university-list {
+  margin: 20px;
+  display: grid;
+  padding: 1px;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.list {
+  border: 2px solid rebeccapurple;
+  margin: 10px;
+  padding: 20px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.list:last-child {
+  border: none;
+  font-weight: 300;
+  :hover {
+    color: blue;
+  }
+}
+
+.list p {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.list p:hover {
+  color: rebeccapurple;
+}
+
+/* Mentors Style */
+.mentors {
+  padding-top: 30px;
+}
+
+.card {
+  margin: 20px 30px 30px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 50px;
+}
+
+@media (max-width: 930px) {
+  .card {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.card-items {
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  background: rgba(245, 245, 245, 0.986);
+  border-radius: 10px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border: 3px solid rebeccapurple;
+  border-radius: 50%;
+}
+
+.details {
+  margin: 2px;
+}
+
+.details h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.details h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Mentor and Advisor */
+.advisor {
+  margin: 50px 10px 40px 50px;
+}
+.heading-advisor {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advisor-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  justify-content: center;
+}
+
+.advisor-item {
+  text-align: center;
+  padding: 2px;
+  margin: 10px;
+  width: 250px;
+}
+.advisor-image {
+  width: 200px;
+  height: 200px;
+  border: 3px solid rebeccapurple;
+  border-radius: 50%;
+}
+
+.advisor-item h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.advisor-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.advisor-item .button {
+  border: none;
+  margin-top: 6px;
+  padding: 8px;
+  border-radius: 15px;
+  color: rebeccapurple;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease 1s;
+  background: rgb(209, 204, 204);
+}
+.advisor-item .button:hover {
+  border: 1px solid rebeccapurple;
+}
+
+/* Responsiveness */
+@media (max-width: 685px) {
+  .heading {
+    font-size: 35px;
+  }
+  .university-list {
+    display: inline;
+    margin-top: 0;
+    padding: 0;
+  }
+  .paragraph {
+    margin-bottom: 0;
+  }
+  .card {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 10px;
+  }
+  .mentors .heading {
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+  .card-items {
+    height: 150px;
+    width: 180px;
+  }
+  .card-items .image {
+    width: 50px;
+    height: 50px;
+  }
+  .card-items h2 {
+    font-size: 14px;
+  }
+  .card-items h3 {
+    font-size: 11px;
+  }
+  .paragraph {
+    font-size: 19px;
+  }
+  .heading-advisor {
+    width: fit-content;
+    font-size: 26px;
+  }
+  .advisor-container {
+    grid-template-columns: auto;
+  }
+}
